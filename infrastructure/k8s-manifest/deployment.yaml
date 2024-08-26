@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-app-2048
+  name: react-app-2048-ss
   namespace: dev
 spec:
   replicas: 2
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: react-app-container
-          image: 186003896484.dkr.ecr.us-east-1.amazonaws.com/react-2048-app:latest
+          image: 208409385559.dkr.ecr.eu-central-1.amazonaws.com/react-app-2048-ss:latest
           ports:
             - containerPort: 3000
